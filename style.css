@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,300");
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: Roboto, sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Player {
+  width: 350px;
+  height: 450px;
+  box-shadow: 0 0 10px #ddd;
+}
+.Player__cover {
+  width: 350px;
+  height: 350px;
+  background-image:
+}
+.Player__lyrics {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.Player__lyrics .line {
+  display: flex;
+  margin-bottom: 30px;
+  width: 90%;
+  color: #fff;
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 5px;
+  padding: 8px 10px;
+  font-size: 14px;
+  line-height: 16px;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.Player__track {
+  width: 0%;
+  height: 4px;
+  background-color: #f44336;
+}
+.Player__details {
+  padding: 12px 20px;
+}
+.Player__details .title {
+  text-align: center;
+  font-size: 20px;
+}
+.Player__controls {
+  display: flex;
+  width: 100%;
+  margin-top: 1px;
+  justify-content: center;
+  align-items: center;
+}
+.Player__controls .icon {
+  cursor: pointer;
+  font-size: 36px;
+  -webkit-user-select: none;
+}
+.Player__controls .icon.disabled {
+  color: #aaa;
+  cursor: default;
+}
+.Player__controls .icon.play {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 54px;
+  color: #b66334;
+}
